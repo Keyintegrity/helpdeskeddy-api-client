@@ -33,8 +33,14 @@ class HelpDeskEddyClient:
             **kwargs
         )
 
+    def get(self, path, params=None):
+        return self._send_request(method='get', path=path, params=params)
+
     def post(self, path, json=None):
         return self._send_request(method='post', path=path, json=json)
 
-    def get(self, path, params=None):
-        return self._send_request(method='get', path=path, params=params)
+    def put(self, path, json=None):
+        return self._send_request(method='put', path=path, json=json)
+
+    def delete(self, path):
+        return self._send_request(method='delete', path=path)
