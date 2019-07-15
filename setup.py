@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="helpdeskeddy-api-client",
-    version="0.0.1",
+    version="0.0.2",
     author="devxplorer",
     author_email="devxplorer@gmail.com",
     description="Simple HelpDeskEddy api client",
